@@ -56,7 +56,7 @@
     "test": "jest",
     "type-check": "turbo run type-check",
     "web": "yarn workspace @calcom/web",
-    "heroku-cleanup": "rm -rf .next/cache && find node_modules/@next -depth -maxdepth 1 -type d -name 'swc*' -exec rm -rf {} \\; -prune; find node_modules/@swc -depth -maxdepth 1 -type d -name 'core-win*' -exec rm -rf {} \\; -prune; find node_modules/@swc -depth -maxdepth 1 -type d -name 'core-android*' -exec rm -rf {} \\; -prune;"
+    "heroku-cleanup": "rm -rf ./apps/web/.next/cache"
   },
   "devDependencies": {
     "@snaplet/copycat": "^0.3.0",
