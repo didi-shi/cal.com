@@ -91,7 +91,6 @@ const nextConfig = {
       unoptimized: true,
     },
   },
-  output: 'standalone',
   webpack: (config) => {
     config.plugins.push(
       new CopyWebpackPlugin({
